@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5001:5001"
+    env_file:
+      - ./server/.env
+    environment:
+      - NODE_ENV=production
+      # In Docker, we override the CLIENT_URL to point to localhost (or domain in production)
+      - CLIENT_URL=http://localhost:8080
+    restart: always
+
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    depends_on:
+      - server
+    restart: always
