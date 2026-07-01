@@ -2,6 +2,13 @@
 
 A full-stack, production-ready MERN (MongoDB, Express, React, Node.js) administrative dashboard. 
 
+## 🌐 Live Links
+- **Frontend (Live)**: [https://task-flow-lyart-eight.vercel.app](https://task-flow-lyart-eight.vercel.app)
+- **Backend API (Live)**: [https://taskflow-c1pa.onrender.com](https://taskflow-c1pa.onrender.com)
+- **Separate Documents**: 
+  - [API_Documentation.md](./API_Documentation.md)
+  - [Scalability_Note.md](./Scalability_Note.md)
+
 ## 🚀 Deliverables Completed
 
 1. **Backend Hosted & Documented**: Fully dockerized backend hosted in GitHub with this detailed `README.md`.
